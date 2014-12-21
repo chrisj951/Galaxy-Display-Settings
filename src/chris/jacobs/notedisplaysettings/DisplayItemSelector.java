@@ -28,8 +28,7 @@ public abstract class DisplayItemSelector implements OnItemSelectedListener {
 
 	public void setMode(String file, String value) throws InterruptedException,
 			IOException {
-		System.out.println("Writing " + value + " to " + file);
-
+		//Write the value to the required file
 		String message = "echo " + value + " > " + file;
 		Process process = Runtime.getRuntime().exec(
 				new String[] { "su", "-c", message });
@@ -66,8 +65,11 @@ public abstract class DisplayItemSelector implements OnItemSelectedListener {
 	
 	
 	private int getPositionOfSpinnerValue(String value){
-		System.out.println("Looking for value : \"" + value +"\"");
+
 		String[] valueArray = context.getResources().getStringArray(this.getArrayRValue());
+		//Search our Array for the same value. Alternatively could use a map to look it up.
+		//Sadly the number isn't kept in the file so we have can't use the number as the position
+		//in the map
 		for(int i=0;i<valueArray.length;i++){
 			System.out.println("arr["+i+"] = " + valueArray[i]);
 			if(valueArray[i].contains(value)){
