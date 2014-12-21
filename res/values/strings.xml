@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Display Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="calibration_image">Calibration Image</string>
+    
+    <string-array name="modes">
+        <item>0 (DYNAMIC)</item>
+        <item>1 (STANDARD)</item>
+        <item>2 (NATURAL)</item>
+        <item>3 (MOVIE)</item>
+        <item>4 (AUTO)</item>
+    </string-array>
+    <string-array name="scenario">
+        <item>0 (UI_MODE)</item>
+        <item>1 (VIDEO_MODE)</item>
+        <item>2 (VIDEO_WARM_MODE)</item>
+        <item>3 (VIDEO_COLD_MODE)</item>
+        <item>4 (CAMERA_MODE)</item>
+        <item>5 (NAVI)</item>
+        <item>6 (GALLERY_MODE)</item>
+        <item>7 (VT_MODE)</item>
+        <item>8 (BROWSER)</item>
+        <item>9 (eBOOK)</item>
+        <item>10 (EMAIL)</item>
+    </string-array>
+
+</resources>
